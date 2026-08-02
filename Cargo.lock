@@ -717,6 +717,63 @@ dependencies = [
 ]
 
 [[package]]
+name = "kuknos-soroban-env-host-tmp"
+version = "20.0.0"
+dependencies = [
+ "arbitrary",
+ "backtrace",
+ "bytes-lit",
+ "curve25519-dalek",
+ "ed25519-dalek",
+ "expect-test",
+ "getrandom",
+ "hex",
+ "hex-literal",
+ "hmac",
+ "itertools",
+ "k256",
+ "kuknos-xdr-tmp",
+ "linregress",
+ "more-asserts",
+ "num-derive",
+ "num-integer",
+ "num-traits",
+ "pretty_assertions",
+ "rand",
+ "rand_chacha",
+ "serde_json",
+ "sha2",
+ "sha3",
+ "soroban-bench-utils",
+ "soroban-builtin-sdk-macros",
+ "soroban-env-common",
+ "soroban-env-macros",
+ "soroban-synth-wasm",
+ "soroban-test-wasms",
+ "soroban-wasmi",
+ "static_assertions",
+ "stellar-strkey",
+ "tabwriter",
+ "textplots",
+ "thousands",
+ "tracy-client",
+ "wasmprinter",
+]
+
+[[package]]
+name = "kuknos-xdr-tmp"
+version = "20.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e267c91a74a984baa6a477155379984a10f0f8c060358c7aecefb42f1420c35d"
+dependencies = [
+ "arbitrary",
+ "crate-git-revision",
+ "escape-bytes",
+ "hex",
+ "stellar-strkey",
+]
+
+[[package]]
 name = "lazy_static"
 version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1386,50 +1443,6 @@ version = "20.0.0"
 dependencies = [
  "soroban-env-common",
  "static_assertions",
-]
-
-[[package]]
-name = "soroban-env-host"
-version = "20.0.0"
-dependencies = [
- "arbitrary",
- "backtrace",
- "bytes-lit",
- "curve25519-dalek",
- "ed25519-dalek",
- "expect-test",
- "getrandom",
- "hex",
- "hex-literal",
- "hmac",
- "itertools",
- "k256",
- "linregress",
- "more-asserts",
- "num-derive",
- "num-integer",
- "num-traits",
- "pretty_assertions",
- "rand",
- "rand_chacha",
- "serde_json",
- "sha2",
- "sha3",
- "soroban-bench-utils",
- "soroban-builtin-sdk-macros",
- "soroban-env-common",
- "soroban-env-macros",
- "soroban-synth-wasm",
- "soroban-test-wasms",
- "soroban-wasmi",
- "static_assertions",
- "stellar-strkey",
- "stellar-xdr",
- "tabwriter",
- "textplots",
- "thousands",
- "tracy-client",
- "wasmprinter",
 ]
 
 [[package]]
