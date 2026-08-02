@@ -1,8 +1,8 @@
 [package]
-name = "soroban-env-host"
+name = "kuknos-soroban-env-host"
 description = "Soroban contract host environment."
-homepage = "https://github.com/stellar/rs-soroban-env"
-repository = "https://github.com/stellar/rs-soroban-env"
+homepage = "https://github.com/parsanoori/rs-soroban-env"
+repository = "https://github.com/parsanoori/rs-soroban-env"
 authors = ["Stellar Development Foundation <info@stellar.org>"]
 license = "Apache-2.0"
 version.workspace = true
