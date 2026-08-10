@@ -15,7 +15,7 @@ crate-git-revision = "=0.0.6"
 
 [dependencies]
 soroban-env-macros = { workspace = true }
-stellar-xdr = { workspace = true, default-features = false, features = [ "curr" ] }
+kuknos-xdr-tmp = { workspace = true, default-features = false, features = [ "curr" ] }
 wasmi = { workspace = true, optional = true }
 serde = { version = "=1.0.192", features = ["derive"], optional = true }
 static_assertions = "=1.1.0"
@@ -32,11 +32,11 @@ num_enum = "=0.7.1"
 num-traits = "=0.2.17"
 
 [features]
-std = ["stellar-xdr/std", "stellar-xdr/base64"]
-serde = ["dep:serde", "stellar-xdr/serde"]
+std = ["kuknos-xdr-tmp/std", "kuknos-xdr-tmp/base64"]
+serde = ["dep:serde", "kuknos-xdr-tmp/serde"]
 wasmi = ["dep:wasmi"]
-testutils = ["dep:arbitrary", "stellar-xdr/arbitrary"]
-next = ["stellar-xdr/next", "soroban-env-macros/next"]
+testutils = ["dep:arbitrary", "kuknos-xdr-tmp/arbitrary"]
+next = ["kuknos-xdr-tmp/next", "soroban-env-macros/next"]
 tracy = ["dep:tracy-client"]
 
 [package.metadata.docs.rs]
