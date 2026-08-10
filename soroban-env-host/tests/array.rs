@@ -1,6 +1,6 @@
-use soroban_env_host::{BytesObject, Host, HostError};
+use kuknos_soroban_env_host_tmp::{BytesObject, Host, HostError};
 
-use soroban_env_common::{Env, TryIntoVal, Val};
+use kuknos_soroban_env_host_tmp::{Env, TryIntoVal, Val};
 
 #[test]
 fn u8_array() -> Result<(), HostError> {
