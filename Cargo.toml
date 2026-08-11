@@ -2,7 +2,7 @@
 resolver = "2"
 
 members = [
-    "soroban-env-host",
+    "kuknos-soroban-env-host-tmp",
     "soroban-env-guest",
     "soroban-env-common",
     "soroban-env-common/tests/no_std",
@@ -16,7 +16,7 @@ members = [
 exclude = ["soroban-test-wasms/wasm-workspace"]
 
 [workspace.package]
-version = "20.0.0"
+version = "20.0.0.1"
 
 [workspace.dependencies]
 soroban-env-common = { version = "=20.0.0", path = "soroban-env-common", default-features = false }
