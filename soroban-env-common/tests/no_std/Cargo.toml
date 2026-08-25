@@ -10,4 +10,4 @@ doctest = false
 test = false
 
 [dependencies]
-soroban-env-common = { path = "../../" }
+kuknos-soroban-env-common-tmp = { path = "../../" }

@@ -1,5 +1,5 @@
 [package]
-name = "soroban-builtin-sdk-macros"
+name = "kuknos-soroban-builtin-sdk-macros-tmp"
 description = "Soroban builtin SDK macros."
 homepage = "https://github.com/stellar/rs-soroban-env"
 repository = "https://github.com/stellar/rs-soroban-env"

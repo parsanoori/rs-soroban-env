@@ -1,5 +1,5 @@
 [package]
-name = "soroban-env-common"
+name = "kuknos-soroban-env-common-tmp"
 description = "Soroban contract environment common types and functionality."
 homepage = "https://github.com/stellar/rs-soroban-env"
 repository = "https://github.com/stellar/rs-soroban-env"
@@ -14,7 +14,6 @@ rust-version = "1.74"
 crate-git-revision = "=0.0.6"
 
 [dependencies]
-soroban-env-macros = { workspace = true }
 kuknos-xdr-tmp = { workspace = true, default-features = false, features = [ "curr" ] }
 wasmi = { workspace = true, optional = true }
 serde = { version = "=1.0.192", features = ["derive"], optional = true }
@@ -23,6 +22,11 @@ ethnum = "=1.5.0"
 arbitrary = { version = "=1.3.2", features = ["derive"], optional = true }
 num-traits = {version = "=0.2.17", default-features = false}
 num-derive = "=0.4.1"
+
+[dependencies.soroban-env-macros]
+workspace = true
+package = "kuknos-soroban-env-macros-tmp"
+
 
 [target.'cfg(not(target_family = "wasm"))'.dependencies]
 tracy-client = { version = "=0.15.2", features = ["enable", "timer-fallback"], default-features = false, optional = true }

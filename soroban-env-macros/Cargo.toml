@@ -1,5 +1,5 @@
 [package]
-name = "soroban-env-macros"
+name = "kuknos-soroban-env-macros-tmp"
 description = "Soroban contract environment macros."
 homepage = "https://github.com/stellar/rs-soroban-env"
 repository = "https://github.com/stellar/rs-soroban-env"

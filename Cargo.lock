@@ -717,8 +717,36 @@ dependencies = [
 ]
 
 [[package]]
+name = "kuknos-soroban-builtin-sdk-macros-tmp"
+version = "20.0.1"
+dependencies = [
+ "itertools",
+ "proc-macro2",
+ "quote",
+ "syn 2.0.39",
+]
+
+[[package]]
+name = "kuknos-soroban-env-common-tmp"
+version = "20.0.1"
+dependencies = [
+ "arbitrary",
+ "crate-git-revision",
+ "ethnum",
+ "kuknos-soroban-env-macros-tmp",
+ "kuknos-xdr-tmp",
+ "num-derive",
+ "num-traits",
+ "num_enum",
+ "serde",
+ "soroban-wasmi",
+ "static_assertions",
+ "tracy-client",
+]
+
+[[package]]
 name = "kuknos-soroban-env-host-tmp"
-version = "20.0.0"
+version = "20.0.1"
 dependencies = [
  "arbitrary",
  "backtrace",
@@ -732,6 +760,9 @@ dependencies = [
  "hmac",
  "itertools",
  "k256",
+ "kuknos-soroban-builtin-sdk-macros-tmp",
+ "kuknos-soroban-env-common-tmp",
+ "kuknos-soroban-env-macros-tmp",
  "kuknos-xdr-tmp",
  "linregress",
  "more-asserts",
@@ -745,9 +776,6 @@ dependencies = [
  "sha2",
  "sha3",
  "soroban-bench-utils",
- "soroban-builtin-sdk-macros",
- "soroban-env-common",
- "soroban-env-macros",
  "soroban-synth-wasm",
  "soroban-test-wasms",
  "soroban-wasmi",
@@ -758,6 +786,19 @@ dependencies = [
  "thousands",
  "tracy-client",
  "wasmprinter",
+]
+
+[[package]]
+name = "kuknos-soroban-env-macros-tmp"
+version = "20.0.1"
+dependencies = [
+ "itertools",
+ "kuknos-xdr-tmp",
+ "proc-macro2",
+ "quote",
+ "serde",
+ "serde_json",
+ "syn 2.0.39",
 ]
 
 [[package]]
@@ -1405,70 +1446,29 @@ checksum = "4dccd0940a2dcdf68d092b8cbab7dc0ad8fa938bf95787e1b916b0e3d0e8e970"
 
 [[package]]
 name = "soroban-bench-utils"
-version = "20.0.0"
+version = "20.0.1"
 dependencies = [
+ "kuknos-soroban-env-common-tmp",
  "perf-event",
- "soroban-env-common",
  "tracking-allocator",
 ]
 
 [[package]]
-name = "soroban-builtin-sdk-macros"
-version = "20.0.0"
-dependencies = [
- "itertools",
- "proc-macro2",
- "quote",
- "syn 2.0.39",
-]
-
-[[package]]
-name = "soroban-env-common"
-version = "20.0.0"
-dependencies = [
- "arbitrary",
- "crate-git-revision",
- "ethnum",
- "kuknos-xdr-tmp",
- "num-derive",
- "num-traits",
- "num_enum",
- "serde",
- "soroban-env-macros",
- "soroban-wasmi",
- "static_assertions",
- "tracy-client",
-]
-
-[[package]]
 name = "soroban-env-guest"
-version = "20.0.0"
+version = "20.0.1"
 dependencies = [
- "soroban-env-common",
+ "kuknos-soroban-env-common-tmp",
  "static_assertions",
-]
-
-[[package]]
-name = "soroban-env-macros"
-version = "20.0.0"
-dependencies = [
- "itertools",
- "kuknos-xdr-tmp",
- "proc-macro2",
- "quote",
- "serde",
- "serde_json",
- "syn 2.0.39",
 ]
 
 [[package]]
 name = "soroban-synth-wasm"
-version = "20.0.0"
+version = "20.0.1"
 dependencies = [
  "arbitrary",
  "expect-test",
- "soroban-env-common",
- "soroban-env-macros",
+ "kuknos-soroban-env-common-tmp",
+ "kuknos-soroban-env-macros-tmp",
  "wasm-encoder",
  "wasmparser",
  "wasmprinter",
@@ -1476,7 +1476,7 @@ dependencies = [
 
 [[package]]
 name = "soroban-test-wasms"
-version = "20.0.0"
+version = "20.0.1"
 
 [[package]]
 name = "soroban-wasmi"
@@ -1568,9 +1568,9 @@ dependencies = [
 
 [[package]]
 name = "test_no_std"
-version = "20.0.0"
+version = "20.0.1"
 dependencies = [
- "soroban-env-common",
+ "kuknos-soroban-env-common-tmp",
 ]
 
 [[package]]
