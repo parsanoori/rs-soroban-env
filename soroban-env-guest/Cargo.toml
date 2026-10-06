@@ -1,5 +1,5 @@
 [package]
-name = "soroban-env-guest"
+name = "kuknos-soroban-env-guest-tmp"
 description = "Soroban contract guest environment."
 homepage = "https://github.com/stellar/rs-soroban-env"
 repository = "https://github.com/stellar/rs-soroban-env"

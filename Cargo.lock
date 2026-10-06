@@ -749,6 +749,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "kuknos-soroban-env-guest-tmp"
+version = "20.0.4"
+dependencies = [
+ "kuknos-soroban-env-common-tmp",
+ "static_assertions",
+]
+
+[[package]]
 name = "kuknos-soroban-env-host-tmp"
 version = "20.0.4"
 dependencies = [
@@ -1424,14 +1432,6 @@ dependencies = [
  "kuknos-soroban-env-common-tmp",
  "perf-event",
  "tracking-allocator",
-]
-
-[[package]]
-name = "soroban-env-guest"
-version = "20.0.4"
-dependencies = [
- "kuknos-soroban-env-common-tmp",
- "static_assertions",
 ]
 
 [[package]]
