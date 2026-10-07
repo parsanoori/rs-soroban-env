@@ -718,7 +718,7 @@ dependencies = [
 
 [[package]]
 name = "kuknos-soroban-builtin-sdk-macros-tmp"
-version = "20.0.4"
+version = "20.0.5"
 dependencies = [
  "itertools",
  "proc-macro2",
@@ -728,7 +728,7 @@ dependencies = [
 
 [[package]]
 name = "kuknos-soroban-env-common-tmp"
-version = "20.0.4"
+version = "20.0.5"
 dependencies = [
  "arbitrary",
  "crate-git-revision",
@@ -746,7 +746,7 @@ dependencies = [
 
 [[package]]
 name = "kuknos-soroban-env-guest-tmp"
-version = "20.0.4"
+version = "20.0.5"
 dependencies = [
  "kuknos-soroban-env-common-tmp",
  "static_assertions",
@@ -754,7 +754,7 @@ dependencies = [
 
 [[package]]
 name = "kuknos-soroban-env-host-tmp"
-version = "20.0.4"
+version = "20.0.5"
 dependencies = [
  "arbitrary",
  "backtrace",
@@ -798,7 +798,7 @@ dependencies = [
 
 [[package]]
 name = "kuknos-soroban-env-macros-tmp"
-version = "20.0.4"
+version = "20.0.5"
 dependencies = [
  "itertools",
  "kuknos-xdr-tmp",
@@ -1454,7 +1454,7 @@ checksum = "4dccd0940a2dcdf68d092b8cbab7dc0ad8fa938bf95787e1b916b0e3d0e8e970"
 
 [[package]]
 name = "soroban-bench-utils"
-version = "20.0.4"
+version = "20.0.5"
 dependencies = [
  "kuknos-soroban-env-common-tmp",
  "perf-event",
@@ -1463,7 +1463,7 @@ dependencies = [
 
 [[package]]
 name = "soroban-synth-wasm"
-version = "20.0.4"
+version = "20.0.5"
 dependencies = [
  "arbitrary",
  "expect-test",
@@ -1476,7 +1476,7 @@ dependencies = [
 
 [[package]]
 name = "soroban-test-wasms"
-version = "20.0.4"
+version = "20.0.5"
 
 [[package]]
 name = "soroban-wasmi"
@@ -1568,7 +1568,7 @@ dependencies = [
 
 [[package]]
 name = "test_no_std"
-version = "20.0.4"
+version = "20.0.5"
 dependencies = [
  "kuknos-soroban-env-common-tmp",
 ]

@@ -16,16 +16,16 @@ members = [
 exclude = ["soroban-test-wasms/wasm-workspace"]
 
 [workspace.package]
-version = "20.0.4"
+version = "20.0.5"
 
 
 
 [workspace.dependencies]
-soroban-env-common = { package = "kuknos-soroban-env-common-tmp", version = "=20.0.4", path = "soroban-env-common", default-features = false }
-soroban-env-guest = { package = "kuknos-soroban-env-guest-tmp", version = "=20.0.4", path = "soroban-env-guest" }
-soroban-env-host = { package = "kuknos-soroban-env-host-tmp", version = "=20.0.4", path = "soroban-env-host" }
-soroban-env-macros = { package = "kuknos-soroban-env-macros-tmp", version = "=20.0.4", path = "soroban-env-macros" }
-soroban-builtin-sdk-macros = { package = "kuknos-soroban-builtin-sdk-macros-tmp", version = "=20.0.4", path = "soroban-builtin-sdk-macros" }
+soroban-env-common = { package = "kuknos-soroban-env-common-tmp", version = "=20.0.5", path = "soroban-env-common", default-features = false }
+soroban-env-guest = { package = "kuknos-soroban-env-guest-tmp", version = "=20.0.5", path = "soroban-env-guest" }
+soroban-env-host = { package = "kuknos-soroban-env-host-tmp", version = "=20.0.5", path = "soroban-env-host" }
+soroban-env-macros = { package = "kuknos-soroban-env-macros-tmp", version = "=20.0.5", path = "soroban-env-macros" }
+soroban-builtin-sdk-macros = { package = "kuknos-soroban-builtin-sdk-macros-tmp", version = "=20.0.5", path = "soroban-builtin-sdk-macros" }
 
 # NB: When updating, also update the version in rs-soroban-env dev-dependencies
 [workspace.dependencies.kuknos-xdr-tmp]
